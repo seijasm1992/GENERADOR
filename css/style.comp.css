@@ -1,0 +1,113 @@
+html {
+  font-size: 62.5%; }
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased; }
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%; }
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; }
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance; }
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  min-height: 100vh;
+  background-color: #1f2632;
+  color: #cee3e9; }
+
+.card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 25rem;
+  background-color: #323a49;
+  max-width: 55rem;
+  border-radius: 8px;
+  padding: 2rem; }
+  .card__number {
+    margin: 3.25rem 0 1.5rem 0;
+    color: #52ffa8; }
+  .card__main {
+    font-size: 2.8rem;
+    text-align: center; }
+  .card__underline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; }
+
+.btn {
+  background-color: #52ffa8;
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  border: none;
+  transition: box-shadow ease-in-out 0.15s;
+  position: relative;
+  top: 4.3rem; }
+  .btn:hover {
+    box-shadow: 0rem 0rem 1rem #52ffa8;
+    cursor: pointer; }

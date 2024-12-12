@@ -1,0 +1,43 @@
+.card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 25rem;
+  background-color: $Dark-Grayish-Blue;
+  max-width: 55rem;
+  border-radius: 8px;
+  padding: 2rem;
+
+  &__number {
+    margin: 3.25rem 0 1.5rem 0;
+    color: $Neon-Green;
+  }
+  &__main {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  &__underline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+}
+.btn {
+  background-color: $Neon-Green;
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  border: none;
+  transition: box-shadow ease-in-out 0.15s;
+  position: relative;
+  top: 4.3rem;
+  &:hover {
+    box-shadow: 0rem 0rem 1rem #52ffa8;
+    cursor: pointer;
+  }
+}
