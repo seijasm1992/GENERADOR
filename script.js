@@ -16,7 +16,7 @@ function fetchAdvice() {
       return res.json();
     })
     .then((data) => {
-      heading.textContent = `Advice #${data.slip.id}`;
+      heading.textContent = `Advice # ${data.slip.id}`;
       paragraph.textContent = data.slip.advice;
     })
     .catch((error) => {
