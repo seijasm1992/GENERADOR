@@ -24,3 +24,4 @@ function fetchAdvice() {
     });
 }
 btnGenerator.addEventListener('click', fetchAdvice);
+document.addEventListener('DOMContentLoaded', fetchAdvice);
